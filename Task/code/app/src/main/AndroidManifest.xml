@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hacra.timetable" >
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:fullBackupContent="@xml/backup_descriptor"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:allowBackup="true">
+        <!-- 首页 -->
+        <activity android:name=".acitvity.MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 添加新任务 -->
+        <activity android:name=".acitvity.NewTaskActivity">
+        </activity>
+
+        <!-- 修改任务 -->
+        <activity android:name=".acitvity.ViewTaskActivity">
+        </activity>
+
+        <!-- 任务定时服务 -->
+
+    </application>
+</manifest>

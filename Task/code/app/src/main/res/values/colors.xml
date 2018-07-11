@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 默认背景颜色 -->
+    <color name="colorBackground">#F3F3F3</color>
+    <color name="colorBackground_1">#0B8BEF</color>
+
+    <!-- 字体颜色 -->
+    <color name="colorText_1">#717476</color>
+    <color name="colorText_2">#C6C9C9</color>
+    <color name="colorText_4">#565656</color>
+</resources>

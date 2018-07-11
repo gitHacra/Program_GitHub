@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 标题 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/main_title"
+        android:textSize="19sp"
+        android:textColor="#FFFFFF"
+        android:paddingStart="13dp"
+        android:paddingEnd="13dp"
+        android:paddingTop="16dp"
+        android:gravity="center"
+        android:background="@drawable/background1">
+    </TextView>
+
+    <!-- 添加任务 -->
+    <TextView
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:id="@+id/main_new"
+        android:background="@drawable/activity_main_new"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="13dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- viewPager -->
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/week_viewpager"
+        android:layout_below="@id/main_title">
+    </android.support.v4.view.ViewPager>
+
+    <!-- 返回当天按钮 -->
+    <TextView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:id="@+id/week_current"
+        android:text="@string/week_current"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:background="@drawable/activity_main_current"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="23dp">
+    </TextView>
+
+</RelativeLayout>

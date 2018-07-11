@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 时间段 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:id="@+id/item_time"
+        android:textSize="16sp"
+        android:textColor="@color/colorText_1"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:gravity="center">
+    </TextView>
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="1px"
+        android:layout_height="18dp"
+        android:id="@+id/view"
+        android:background="@color/colorText_2"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/item_time">
+    </View>
+
+    <!-- 任务内容 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/item_task"
+        android:textSize="16sp"
+        android:textColor="@color/colorText_1"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:gravity="center_vertical"
+        android:layout_toEndOf="@id/view">
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/view2"
+        android:background="@color/colorText_2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/item_time">
+    </View>
+</RelativeLayout>
