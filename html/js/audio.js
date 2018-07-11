@@ -48,7 +48,7 @@ function setListener() {
             volume = volume <= 0 ? 0 : volume >= 100 ? 100 : volume
             document.getElementById('audio_volume_progress_2').style.width = volume
             progress_3.style.marginLeft = volume - 8
-            document.getElementById('my_audio').volume = volume * 0.006
+            document.getElementById('my_audio').volume = volume * 0.007
         }
     })
     document.addEventListener('mouseup', function (event) {
@@ -136,4 +136,4 @@ function setAnimation() {
 initMusic()
 setListener()
 setAnimation()
-document.getElementById('my_audio').volume = 0.12
+document.getElementById('my_audio').volume = 0.28

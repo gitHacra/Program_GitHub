@@ -189,7 +189,7 @@ a {
 }
 
 .audio_volume_progress_2 {
-    width: 20px;
+    width: 40px;
     height: 3px;
     background-color: #B3B3B3;
 }
@@ -198,7 +198,7 @@ a {
     width: 16px;
     height: 16px;
     margin-top: -9px;
-    margin-left: 12px;
+    margin-left: 32px;
     cursor: pointer;
 }
 
