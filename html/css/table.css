@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+
+.tab {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.tr {
+    height: 50px;
+}
+
+.td0 {
+    width: 50px;
+    text-align: center;
+    color: #666666;
+}
+
+.td {
+    width: 190px;
+    text-align: center;
+    color: #666666;
+}
