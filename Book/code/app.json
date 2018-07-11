@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",       // 书籍页面
+    "pages/user/user",         // 用户信息页面
+    "pages/search/search",     // 图书搜索页面
+    "pages/sub/sub",           // 图书分类页面
+    "pages/comment/comment",   // 评论页面
+    "pages/info/info",         // 图书详情页面
+    "pages/list/list",         // 二级分类列表页面
+    "pages/show/show"          // 预定、归还、借书页面
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#243158",
+    "navigationBarTitleText": "咏文图书",
+    "navigationBarTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#243158",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "书籍",
+        "iconPath": "images/book.png",
+        "selectedIconPath": "images/bookclicked.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/meclicked.png"
+      }
+    ]
+  }
+}
+

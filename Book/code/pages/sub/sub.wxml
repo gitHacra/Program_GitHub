@@ -1,0 +1,147 @@
+<!-- ---------- -->
+<!-- 图书分类页面 -->
+<!-- ---------- -->
+
+<!-- 文学分类 -->
+<view class="space"> </view>
+<template is="dirTop" data="{{...dir[0]}}"></template>
+<view class="dir8">
+  <view class="dir10" bindtap="subTap" data-hi="{{dir[0].sub[6]}}" hover-class="dirHover">{{dir[0].sub[6]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[0].sub[7]}}" hover-class="dirHover">{{dir[0].sub[7]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[0].sub[8]}}" hover-class="dirHover">{{dir[0].sub[8]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[0].sub[9]}}" hover-class="dirHover">{{dir[0].sub[9]}}</view>
+</view>
+<view class="dir8">
+  <view class="dir10" bindtap="subTap" data-hi="{{dir[0].sub[10]}}" hover-class="dirHover">{{dir[0].sub[10]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[0].sub[11]}}" hover-class="dirHover">{{dir[0].sub[11]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[0].sub[12]}}" hover-class="dirHover">{{dir[0].sub[12]}}</view>
+  <view class="dir9"> </view>
+</view>
+
+<!-- 经管分类 -->
+<view class="space"> </view>
+<template is="dirTop" data="{{...dir[1]}}"></template>
+<view class="dir8">
+  <view class="dir10" bindtap="subTap" data-hi="{{dir[1].sub[6]}}" hover-class="dirHover">{{dir[1].sub[6]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[1].sub[7]}}" hover-class="dirHover">{{dir[1].sub[7]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[1].sub[8]}}" hover-class="dirHover">{{dir[1].sub[8]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[1].sub[9]}}" hover-class="dirHover">{{dir[1].sub[9]}}</view>
+</view>
+<view class="dir8">
+  <view class="dir10" bindtap="subTap" data-hi="{{dir[1].sub[10]}}" hover-class="dirHover">{{dir[1].sub[10]}}</view>
+  <view class="dir9"> </view>
+  <view class="dir9"> </view>
+  <view class="dir9"> </view>
+</view>
+
+<!-- 流行分类 -->
+<view class="space"> </view>
+<template is="dirTop" data="{{...dir[2]}}"></template>
+<view class="dir8">
+  <view class="dir10" bindtap="subTap" data-hi="{{dir[2].sub[6]}}" hover-class="dirHover">{{dir[2].sub[6]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[2].sub[7]}}" hover-class="dirHover">{{dir[2].sub[7]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[2].sub[8]}}" hover-class="dirHover">{{dir[2].sub[8]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[2].sub[9]}}" hover-class="dirHover">{{dir[2].sub[9]}}</view>
+</view>
+<view class="dir8">
+  <view class="dir10" bindtap="subTap" data-hi="{{dir[2].sub[10]}}" hover-class="dirHover">{{dir[2].sub[10]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[2].sub[11]}}" hover-class="dirHover">{{dir[2].sub[11]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[2].sub[12]}}" hover-class="dirHover">{{dir[2].sub[12]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[2].sub[13]}}" hover-class="dirHover">{{dir[2].sub[13]}}</view>
+</view>
+<view class="dir8">
+  <view class="dir10" bindtap="subTap" data-hi="{{dir[2].sub[14]}}" hover-class="dirHover">{{dir[2].sub[14]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[2].sub[15]}}" hover-class="dirHover">{{dir[2].sub[15]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[2].sub[16]}}" hover-class="dirHover">{{dir[2].sub[16]}}</view>
+  <view class="dir9"> </view>
+</view>
+
+<!-- 文化分类 -->
+<view class="space"> </view>
+<template is="dirTop" data="{{...dir[3]}}"></template>
+<view class="dir8">
+  <view class="dir10" bindtap="subTap" data-hi="{{dir[3].sub[6]}}" hover-class="dirHover">{{dir[3].sub[6]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[3].sub[7]}}" hover-class="dirHover">{{dir[3].sub[7]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[3].sub[8]}}" hover-class="dirHover">{{dir[3].sub[8]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[3].sub[9]}}" hover-class="dirHover">{{dir[3].sub[9]}}</view>
+</view>
+<view class="dir8">
+  <view class="dir10" bindtap="subTap" data-hi="{{dir[3].sub[10]}}" hover-class="dirHover">{{dir[3].sub[10]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[3].sub[11]}}" hover-class="dirHover">{{dir[3].sub[11]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[3].sub[12]}}" hover-class="dirHover">{{dir[3].sub[12]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[3].sub[13]}}" hover-class="dirHover">{{dir[3].sub[13]}}</view>
+</view>
+<view class="dir8">
+  <view class="dir10" bindtap="subTap" data-hi="{{dir[3].sub[14]}}" hover-class="dirHover">{{dir[3].sub[14]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[3].sub[15]}}" hover-class="dirHover">{{dir[3].sub[15]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[3].sub[16]}}" hover-class="dirHover">{{dir[3].sub[16]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[3].sub[17]}}" hover-class="dirHover">{{dir[3].sub[17]}}</view>
+</view>
+<view class="dir8">
+  <view class="dir10" bindtap="subTap" data-hi="{{dir[3].sub[18]}}" hover-class="dirHover">{{dir[3].sub[18]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[3].sub[19]}}" hover-class="dirHover">{{dir[3].sub[19]}}</view>
+  <view class="dir9"> </view>
+  <view class="dir9"> </view>
+</view>
+
+<!-- 生活分类 -->
+<view class="space"> </view>
+<template is="dirTop" data="{{...dir[4]}}"></template>
+<view class="dir8">
+  <view class="dir10" bindtap="subTap" data-hi="{{dir[4].sub[6]}}" hover-class="dirHover">{{dir[4].sub[6]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[4].sub[7]}}" hover-class="dirHover">{{dir[4].sub[7]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[4].sub[8]}}" hover-class="dirHover">{{dir[4].sub[8]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[4].sub[9]}}" hover-class="dirHover">{{dir[4].sub[9]}}</view>
+</view>
+<view class="dir8">
+  <view class="dir10" bindtap="subTap" data-hi="{{dir[4].sub[10]}}" hover-class="dirHover">{{dir[4].sub[10]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[4].sub[11]}}" hover-class="dirHover">{{dir[4].sub[11]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[4].sub[12]}}" hover-class="dirHover">{{dir[4].sub[12]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[4].sub[13]}}" hover-class="dirHover">{{dir[4].sub[13]}}</view>
+</view>
+<view class="dir8">
+  <view class="dir10" bindtap="subTap" data-hi="{{dir[4].sub[14]}}" hover-class="dirHover">{{dir[4].sub[14]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[4].sub[15]}}" hover-class="dirHover">{{dir[4].sub[15]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[4].sub[16]}}" hover-class="dirHover">{{dir[4].sub[16]}}</view>
+  <view class="dir9"> </view>
+</view>
+
+<!-- 科技分类 -->
+<view class="space"> </view>
+<template is="dirTop" data="{{...dir[5]}}"></template>
+<view class="dir8">
+  <view class="dir10" bindtap="subTap" data-hi="{{dir[5].sub[6]}}" hover-class="dirHover">{{dir[5].sub[6]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[5].sub[7]}}" hover-class="dirHover">{{dir[5].sub[7]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[5].sub[8]}}" hover-class="dirHover">{{dir[5].sub[8]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[5].sub[9]}}" hover-class="dirHover">{{dir[5].sub[9]}}</view>
+</view>
+<view class="dir8">
+  <view class="dir10" bindtap="subTap" data-hi="{{dir[5].sub[10]}}" hover-class="dirHover">{{dir[5].sub[10]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[5].sub[11]}}" hover-class="dirHover">{{dir[5].sub[11]}}</view>
+  <view class="dir9" bindtap="subTap" data-hi="{{dir[5].sub[12]}}" hover-class="dirHover">{{dir[5].sub[12]}}</view>
+  <view class="dir9"> </view>
+</view>
+<view class="space"> </view>
+
+
+<!-- 顶部分类模板 -->
+<template name="dirTop">
+  <view class="dir1">
+    <view class="dir2">
+      <image class="dir3" src="{{image}}"></image>
+      <view class="dir4">{{name}}</view>
+    </view>
+    <view class="dir5">
+      <view class="dir6">
+        <view class="dir7" bindtap="subTap" data-hi="{{sub[0]}}" hover-class="dirHover">{{sub[0]}}</view>
+        <view class="dir7" bindtap="subTap" data-hi="{{sub[1]}}" hover-class="dirHover">{{sub[1]}}</view>
+        <view class="dir7" bindtap="subTap" data-hi="{{sub[2]}}" hover-class="dirHover">{{sub[2]}}</view>
+      </view>
+      <view class="dir6">
+        <view class="dir7" bindtap="subTap" data-hi="{{sub[3]}}" hover-class="dirHover">{{sub[3]}}</view>
+        <view class="dir7" bindtap="subTap" data-hi="{{sub[4]}}" hover-class="dirHover">{{sub[4]}}</view>
+        <view class="dir7" bindtap="subTap" data-hi="{{sub[5]}}" hover-class="dirHover">{{sub[5]}}</view>
+      </view>
+    </view>
+  </view>
+</template>

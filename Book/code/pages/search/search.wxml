@@ -1,0 +1,54 @@
+<!-- ------- -->
+<!-- 搜索页面 -->
+<!-- ------- -->
+
+<!-- 顶部搜索栏 -->
+<form bindsubmit="formSubmit">
+  <view class="form">
+    <input class="formInp" focus="true" name="input" confirm-type="search" bindinput="inputTap" value="{{txt}}"></input>
+    <button class="formSub" form-type="submit">搜 索</button>
+  </view>
+</form>
+
+<!-- 搜索历史 -->
+<block wx:if="{{flag}}">
+  <view class="his" bindtap="hiTap">搜索历史(清空)</view>
+  <block wx:for="{{history}}">
+    <template is="history" data="{{item}}"></template>
+  </block>
+</block>
+
+<!-- 图书列表 -->
+<block wx:else>
+  <block wx:for="{{books}}">
+    <template is="list" data="{{...item}}"></template>
+  </block>
+</block>
+
+<!-- 搜索历史模板 -->
+<template name="history">
+  <view class="history" data-hi="{{item}}" bindtap="hisTap" hover-class="hover">{{item}}</view>
+</template>
+
+<!-- 图书列表模板 -->
+<template name="list">
+  <view class="book1" data-hi="{{isbn13}}" bindtap="bookTap" hover-class="hover">
+    <image class="bookImg" data-hi="{{isbn13}}" src="{{image}}"></image>
+    <view class="bookInfo" data-hi="{{isbn13}}">
+      <view class="bookTxt" data-hi="{{isbn13}}" style="font-size:31rpx; color:#666666">{{title}}</view>
+      <view class="bookTxt" data-hi="{{isbn13}}">作者：
+        <block wx:if="{{author.length == 0}}">未知</block>
+        <block wx:else>{{author[0]}}</block>
+      </view>
+      <view class="bookTxt" data-hi="{{isbn13}}">出版社：
+        <block wx:if="{{publisher.length == 0}}">未知</block>
+        <block wx:else>{{publisher}}</block>
+      </view>
+      <view class="bookTxt" data-hi="{{isbn13}}">出版日期：
+        <block wx:if="{{pubdate.length == 0}}">未知</block>
+        <block wx:else>{{pubdate}}</block>
+      </view>
+    </view>
+    <view class="bookGrade" data-hi="{{isbn13}}">{{rating.average}}</view>
+  </view>
+</template>

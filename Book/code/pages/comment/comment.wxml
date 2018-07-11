@@ -1,0 +1,8 @@
+<!-- ------- -->
+<!-- 评论页面 -->
+<!-- ------- -->
+
+<view class="empty">
+  <image class="emptyImg" src="{{empty}}"></image>
+  <view class="emptyTxt">暂无评论</view>
+</view>

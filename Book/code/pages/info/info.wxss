@@ -1,0 +1,145 @@
+/* ---------- */
+/* 图书详情页面 */
+/* ---------- */
+
+/* 图书信息 */
+
+.book1 {
+  width: 100%;
+  height: 300rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: #243158;
+}
+
+.bookImg {
+  width: 175rpx;
+  height: 240rpx;
+  margin-left: 26rpx;
+  margin-top: 22rpx;
+}
+
+.bookInfo {
+  width: 510rpx;
+  height: 240rpx;
+  margin-left: 26rpx;
+  margin-top: 22rpx;
+}
+
+.bookTxt {
+  width: 100%;
+  height: 60rpx;
+  color: #DBDBDB;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* tab */
+
+.tab1 {
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #243158;
+  margin-top: -1rpx;
+}
+
+.tab2 {
+  width: 33.3%;
+  height: 50rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 50rpx;
+  margin-top: 10rpx;
+}
+
+/* txt */
+.txt1 {
+  margin-top: 22rpx;
+  margin-bottom: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.txt2 {
+  color: #686868;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+
+/* 借阅/收藏/相关书籍 */
+.jie {
+  height: 110rpx;
+  display: flex;
+  margin-top: 12rpx;
+  flex-direction: row;
+  margin-left: 27rpx;
+  margin-right: 25rpx;
+}
+
+.jieImg0 {
+  width: 39rpx;
+  height: 39rpx;
+  margin-top: 36rpx;
+  border-radius: 7rpx;
+}
+
+.jieTxt {
+  width: 175rpx;
+  color: #243158;
+  font-size: 31rpx;
+  line-height: 110rpx;
+  margin-left: 26rpx;
+}
+
+.jieImg {
+  width: 50rpx;
+  height: 48rpx;
+  margin-top: 36rpx;
+  margin-left: 405rpx;
+}
+
+/* 相关书籍列表 */
+
+.xiang1 {
+  height: 330rpx;
+  display: flex;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  flex-direction: row;
+}
+
+.xiang2 {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.xiang3 {
+  width: 70%;
+  height: 225rpx;
+  margin-left: 15%;
+  margin-top: 25rpx;
+}
+
+.xiang4 {
+  width: 100%;
+  height: 80rpx;
+  font-size: 29rpx;
+  line-height: 80rpx;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* 点击样式 */
+.hover {
+  border-radius: 8rpx;
+  background-color: #F5F7FF;
+}

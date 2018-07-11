@@ -1,0 +1,103 @@
+/* ------- */
+/* 搜索页面 */
+/* ------- */
+
+/* 输入框 */
+.form {
+  height: 190rpx;
+  padding-top: 15rpx;
+  background-color: #F2F4F5;
+}
+
+.formInp {
+  color: #243158;
+  height: 80rpx;
+  font-size: 32rpx;
+  text-align: left;
+  line-height: 80rpx;
+  margin-bottom: 15rpx;
+  padding-left: 22rpx;
+  background-color: #FFFFFF;
+}
+
+.formSub {
+  width: 94%;
+  height: 82rpx;
+  color: #FFFFFF;
+  font-size: 33rpx;
+  margin-left: 3%;
+  background-color: #243158;
+}
+
+/* 搜索历史 */
+
+.his {
+  height: 90rpx;
+  color: #7a7a7a;
+  font-size: 29rpx;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  line-height: 90rpx;
+  border-bottom: 1rpx solid #F2F4F5;
+}
+
+.history {
+  height: 90rpx;
+  color: #243158;
+  font-size: 29rpx;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  padding-left: 12rpx;
+  line-height: 90rpx;
+  border-bottom: 1rpx solid #F2F4F5;
+}
+
+/* 图书列表 */
+
+.book1 {
+  width: 100%;
+  height: 224rpx;
+  display: flex;
+  flex-direction: row;
+  border-top: 1rpx solid #F2F4F5;
+}
+
+.bookImg {
+  width: 138rpx;
+  height: 190rpx;
+  margin-left: 22rpx;
+  margin-top: 17rpx;
+}
+
+.bookInfo {
+	width: 495rpx;
+  height: 190rpx;
+  margin-left: 22rpx;
+  margin-top: 17rpx;
+}
+
+.bookTxt {
+	width: 100%;
+  height: 48rpx;
+  color: #7a7a7a;
+  font-size: 27rpx;
+  line-height: 48rpx;
+  text-align: left;
+	overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.bookGrade {
+	height: 48rpx;
+	color: #243158;
+	font-size: 28rpx;
+	text-align: center;
+	line-height: 48rpx;
+	margin-top: 15rpx;
+}
+
+/* 点击样式 */
+.hover {
+  background-color: #F2F4F5;
+}

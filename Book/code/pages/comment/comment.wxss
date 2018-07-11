@@ -1,0 +1,23 @@
+/* ------- */
+/* 评论页面 */
+/* ------- */
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  margin-top: 130rpx;
+}
+
+.emptyImg {
+  width: 125rpx;
+  height: 125rpx;
+  margin-left: 312rpx;
+}
+
+.emptyTxt {
+  height: 80rpx;
+  color: #7183B9;
+  font-size: 31rpx;
+  text-align: center;
+  line-height: 80rpx;
+}

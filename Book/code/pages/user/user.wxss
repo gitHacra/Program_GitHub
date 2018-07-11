@@ -1,0 +1,70 @@
+/* ---------- */
+/* 个人信息页面 */
+/* ---------- */
+
+/* top */
+.top {
+  height: 230rpx;
+  background-color: #243158;
+  display: flex;
+  flex-direction: row;
+}
+
+.infoImg {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  margin-top: 55rpx;
+  margin-left: 30rpx;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 58rpx;
+  margin-left: 25rpx;
+}
+
+.infoTxt {
+  color: #FFFFFF;
+  height: 55rpx;
+  font-size: 31rpx;
+  line-height: 55rpx;
+}
+
+/* tab */
+.tab {
+  height: 106rpx;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15rpx;
+}
+
+.tabImg {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 34rpx;
+  margin-left: 33rpx;
+  border-radius: 7rpx;
+}
+
+.tabTxt {
+  color: #243158;
+  font-size: 31rpx;
+  margin-left: 33rpx;
+  line-height: 106rpx;
+}
+
+.tabNum {
+  height: 40rpx;
+  color: #2196F3;
+  font-size: 30rpx;
+  text-align: center;
+  margin-top: 34rpx;
+  margin-left: 460rpx;
+}
+
+/* 点击样式 */
+.hover {
+  background-color: #F2F4F5;
+}

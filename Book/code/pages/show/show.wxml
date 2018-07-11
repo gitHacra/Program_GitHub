@@ -1,0 +1,32 @@
+<!-- ----------------- -->
+<!-- 预定、归还、借书页面 -->
+<!-- ----------------- -->
+
+<!-- 图书列表 -->
+<block wx:if="{{books.length > 0}}">
+  <block wx:for="{{books}}">
+    <template is="list" data="{{...item}}"></template>
+  </block>
+</block>
+
+<!-- 没有图书 -->
+<block wx:else>
+  <view class="empty">
+    <image class="emptyImg" src="{{empty}}"></image>
+    <view class="emptyTxt">暂无书籍</view>
+  </view>
+</block>
+
+<!-- 列表模板 -->
+<template name="list">
+  <view class="book1" data-hi="{{isbn}}" bindtap="bookTap" hover-class="bookHover">
+    <image class="bookImg" data-hi="{{isbn}}" src="{{image}}"></image>
+    <view class="bookInfo">
+      <view class="bookTxt" style="font-size:31rpx; color:#666666" data-hi="{{isbn}}">{{title}}</view>
+      <view class="bookTxt" data-hi="{{isbn}}">作者：{{author}}</view>
+      <view class="bookTxt" data-hi="{{isbn}}">出版社：{{publisher}}</view>
+      <view class="bookTxt" data-hi="{{isbn}}">出版日期：{{pubdate}}</view>
+    </view>
+    <view class="bookGrade" data-hi="{{isbn}}">{{grade}}</view>
+  </view>
+</template>

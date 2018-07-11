@@ -1,0 +1,22 @@
+<!-- ------------- -->
+<!-- 二级分类列表页面 -->
+<!-- ------------- -->
+
+<!-- 分类列表 -->
+<block wx:for="{{books}}">
+  <template is="list" data="{{...item}}"></template>
+</block>
+
+<!-- 列表模板 -->
+<template name="list">
+  <view class="book1" data-hi="{{isbn}}" bindtap="bookTap" hover-class="bookHover">
+    <image class="bookImg" data-hi="{{isbn}}" src="{{image}}"></image>
+    <view class="bookInfo">
+      <view class="bookTxt" style="font-size:31rpx; color:#666666" data-hi="{{isbn}}">{{title}}</view>
+      <view class="bookTxt" data-hi="{{isbn}}">作者：{{author}}</view>
+      <view class="bookTxt" data-hi="{{isbn}}">出版社：{{publisher}}</view>
+      <view class="bookTxt" data-hi="{{isbn}}">出版日期：{{pubdate}}</view>
+    </view>
+    <view class="bookGrade" data-hi="{{isbn}}">{{grade}}</view>
+  </view>
+</template>

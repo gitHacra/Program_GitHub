@@ -1,0 +1,87 @@
+<!-- ---------- -->
+<!-- 图书详情页面 -->
+<!-- ---------- -->
+
+<!-- 图书信息 -->
+<view class="book1">
+  <block wx:if="{{hide}}">
+    <image class="bookImg" src="{{info.image}}"></image>
+    <view class="bookInfo">
+      <view class="bookTxt">作者：
+        <block wx:if="{{info.author.length == 0}}">未知</block>
+        <block wx:else>{{info.author[0]}}</block>
+      </view>
+      <view class="bookTxt">评分：
+        <block wx:if="{{info.rating.average.length == 0}}">未知</block>
+        <block wx:else>{{info.rating.average}}</block>
+      </view>
+      <view class="bookTxt">出版社：
+        <block wx:if="{{info.publisher.length == 0}}">未知</block>
+        <block wx:else>{{info.publisher}}</block>
+      </view>
+      <view class="bookTxt">出版日期：
+        <block wx:if="{{info.pubdate.length == 0}}">未知</block>
+        <block wx:else>{{info.pubdate}}</block>
+      </view>
+    </view>
+  </block>
+</view>
+
+<!-- tab -->
+<view class="tab1">
+  <view class="tab2" bindtap="tabTap1" style="border-right:1rpx solid #D6D6D6; color:{{tabColor1}}">内容</view>
+  <view class="tab2" bindtap="tabTap2" style="color:{{tabColor2}}">作者</view>
+  <view class="tab2" bindtap="tabTap3" style="border-left:1rpx solid #D6D6D6; color:{{tabColor3}}">借阅</view>
+</view>
+
+<!-- 内容简介 -->
+<block wx:if="{{tabIndex == 1}}">
+  <view class="txt1">
+    <text class="txt2">
+      <block wx:if="{{info.catalog.length == 0}}">暂无内容简介</block>
+      <block wx:else>{{info.catalog}}</block>
+    </text>
+  </view>
+</block>
+
+<!-- 作者简介 -->
+<block wx:if="{{tabIndex == 2}}">
+  <view class="txt1">
+    <text class="txt2">
+      <block wx:if="{{info.author_intro.length == 0}}">暂无作者简介</block>
+      <block wx:else>{{info.author_intro}}</block>
+    </text>
+  </view>
+</block>
+
+<!-- 借阅 -->
+<block wx:if="{{tabIndex == 3}}">
+  <view class="jie">
+    <image class="jieImg0" src="{{jieImg0}}" style="background-color:#FE9D32"></image>
+    <view class="jieTxt">借阅(可借)</view>
+    <image class="jieImg" src="{{jieImg}}" bindtap="jieTap"></image>
+  </view>
+  <view class="jie">
+    <image class="jieImg0" src="{{cangImg0}}" style="background-color:#F96E68"></image>
+    <view class="jieTxt">收藏</view>
+    <image class="jieImg" src="{{cangImg}}" bindtap="cangTap"></image>
+  </view>
+  <view class="jie">
+    <image class="jieImg0" src="{{xiangImg0}}" style="background-color:#719EF7"></image>
+    <view class="jieTxt">相关书籍</view>
+  </view>
+  <view class="xiang1">
+    <view class="xiang2" hover-class="hover">
+      <image class="xiang3" src="{{xiang[0].image}}" bindtap="xiangTap" data-hi="{{xiang[0].isbn}}"></image>
+      <view class="xiang4">{{xiang[0].title}}</view>
+    </view>
+    <view class="xiang2" hover-class="hover">
+      <image class="xiang3" src="{{xiang[1].image}}" bindtap="xiangTap" data-hi="{{xiang[1].isbn}}"></image>
+      <view class="xiang4">{{xiang[1].title}}</view>
+    </view>
+    <view class="xiang2" hover-class="hover">
+      <image class="xiang3" src="{{xiang[2].image}}" bindtap="xiangTap" data-hi="{{xiang[2].isbn}}"></image>
+      <view class="xiang4">{{xiang[2].title}}</view>
+    </view>
+  </view>
+</block>

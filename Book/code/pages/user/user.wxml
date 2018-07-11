@@ -1,0 +1,40 @@
+<!-- ---------- -->
+<!-- 个人信息页面 -->
+<!-- ---------- -->
+
+<!-- 头像名称地址 -->
+<view class="top" bindtap="loginTap">
+  <image class="infoImg" src="{{image}}"></image>
+  <view class="info">
+    <view class="infoTxt">{{name}}</view>
+    <view class="infoTxt">{{city}}</view>
+  </view>
+</view>
+
+<!-- tab -->
+<view class="tab" hover-class="hover" bindtap="showTap" data-hi="0">
+  <image class="tabImg" src="{{yuImg}}" style="background-color:#FE9D32" data-hi="0"></image>
+  <view class="tabTxt" data-hi="0">预定书籍</view>
+  <view class="tabNum" data-hi="0">{{numYu}}</view>
+</view>
+<view class="tab" hover-class="hover" bindtap="showTap" data-hi="1">
+  <image class="tabImg" src="{{guiImg}}" style="background-color:#719EF7" data-hi="1"></image>
+  <view class="tabTxt" data-hi="1">归还书籍</view>
+  <view class="tabNum" data-hi="1">{{numGui}}</view>
+</view>
+<view class="tab" hover-class="hover" bindtap="showTap" data-hi="2">
+  <image class="tabImg" src="{{tuiImg}}" style="background-color:#F96E68" data-hi="2"></image>
+  <view class="tabTxt" data-hi="2">推荐书籍</view>
+  <view class="tabNum" data-hi="2">{{numTui}}</view>
+</view>
+<view class="tab" hover-class="hover" bindtap="showTap" data-hi="3">
+  <image class="tabImg" src="{{jieImg}}" style="background-color:#71CE6C" data-hi="3"></image>
+  <view class="tabTxt" data-hi="3">借书历史</view>
+  <view class="tabNum" data-hi="3">{{numJie}}</view>
+</view>
+<view class="tab" hover-class="hover" bindtap="showTap" data-hi="4">
+  <image class="tabImg" src="{{shouImg}}" style="background-color:#AD52C1" data-hi="4"></image>
+  <view class="tabTxt" data-hi="4">我的收藏</view>
+  <view class="tabNum" data-hi="4">{{numCang}}</view>
+</view>
+

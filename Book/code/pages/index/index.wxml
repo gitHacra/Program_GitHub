@@ -1,0 +1,73 @@
+<!-- ------- -->
+<!-- 书籍页面 -->
+<!-- ------- -->
+
+<!-- 顶部搜索栏 -->
+<view class="search">
+  <image class="searchImg" src="{{searchImg}}"></image>
+  <view class="searchTxt" bindtap="searchTap">{{searchTxt}}</view>
+  <image class="scanImg" bindtap="scanTap" src="{{scanImg}}"></image>
+</view>
+
+<!-- 中间展示区 -->
+<image class="showImg" src="{{showImg}}"></image>
+
+<!-- tab -->
+<view class="tab1">
+	<view class="tab2" bindtap="paiTap">
+		<image class="tabImg" src="{{paiImg}}" style="background-color:#FE9D32"></image>
+		<view class="tabTxt">排行</view>
+	</view>
+	<view class="tab2" bindtap="fenTap">
+		<image class="tabImg" src="{{fenImg}}" style="background-color:#719EF7"></image>
+		<view class="tabTxt">分类</view>
+	</view>
+	<view class="tab2" bindtap="xinTap">
+		<image class="tabImg" src="{{xinImg}}" style="background-color:#F96E68"></image>
+		<view class="tabTxt">新书</view>
+	</view>
+	<view class="tab2" bindtap="pingTap">
+		<image class="tabImg" src="{{pingImg}}" style="background-color:#71CE6C"></image>
+		<view class="tabTxt">评论</view>
+	</view>
+</view>
+
+<!-- 排行列表 -->
+<block wx:if="{{tabIndex == 1}}">
+	<block wx:for="{{paibooks}}">
+		<template is="paiList" data="{{...item}}"></template>
+	</block>
+</block>
+
+<!-- 新书列表 -->
+<block wx:if="{{tabIndex == 2}}">
+	<block wx:for="{{xinbooks}}">
+		<template is="xinList" data="{{...item}}"></template>
+	</block>
+</block>
+
+<!-- 列表模板 -->
+<template name="paiList">
+	<view class="book1" data-hi="{{isbn}}" bindtap="bookTap" hover-class="bookHover">
+		<image class="bookImg" data-hi="{{isbn}}" src="{{image}}"></image>	
+		<view class="bookInfo">
+			<view class="bookTxt" style="font-size:31rpx; color:#666666" data-hi="{{isbn}}">{{title}}</view>
+			<view class="bookTxt" data-hi="{{isbn}}">作者：{{author}}</view>
+			<view class="bookTxt" data-hi="{{isbn}}">出版社：{{publisher}}</view>
+			<view class="bookTxt" data-hi="{{isbn}}">出版日期：{{pubdate}}</view>
+		</view>
+		<view class="bookGrade" data-hi="{{isbn}}">{{grade}}</view>
+	</view>
+</template>
+
+<template name="xinList">
+	<view class="book1" data-hi="{{isbn}}" bindtap="bookTap" hover-class="bookHover">
+		<image class="bookImg" data-hi="{{isbn}}" src="{{image}}"></image>	
+		<view class="bookInfo">
+			<view class="bookTxt" style="font-size:31rpx; color:#666666" data-hi="{{isbn}}">{{title}}</view>
+			<view class="bookTxt" data-hi="{{isbn}}">作者：{{author}}</view>
+			<view class="bookTxt" data-hi="{{isbn}}">出版社：{{publisher}}</view>
+			<view class="bookTxt" data-hi="{{isbn}}">出版日期：{{pubdate}}</view>
+		</view>
+	</view>
+</template>
