@@ -1,0 +1,16 @@
+{
+    "name": "网页翻译",
+    "manifest_version": 2,
+    "version": "0.1.0",
+    "description": "网页选词翻译插件",
+    "icons": {
+        "72": "icon.png"
+    },
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["jquery.js","md5.js","api.js","script.js"]
+    }]
+}
