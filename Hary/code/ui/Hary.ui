@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1140</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1140</width>
+    <height>640</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1140</width>
+    <height>640</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>11</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Hary</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_1">
+    <property name="geometry">
+     <rect>
+      <x>37</x>
+      <y>17</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>壁纸分类：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_1">
+    <property name="geometry">
+     <rect>
+      <x>122</x>
+      <y>14</y>
+      <width>65</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>全部</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>风景</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>动漫</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>美女</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>创意</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>卡通</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>汽车</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>游戏</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>可爱</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>明星</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>建筑</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>植物</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>静物</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>动物</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>影视</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>车模</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>体育</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>品牌</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>星座</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>美食</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>节日</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>其他</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>224</x>
+      <y>17</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>壁纸尺寸：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>309</x>
+      <y>13</y>
+      <width>200</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>1920x1080(15-23英寸)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1680x1050(22英寸)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1600x900(20英寸)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1440x900(15-19英寸)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1366x768(14-15英寸)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1280x800(12-14英寸)</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>546</x>
+      <y>17</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>壁纸色系：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_3">
+    <property name="geometry">
+     <rect>
+      <x>631</x>
+      <y>14</y>
+      <width>65</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>全部</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>红色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>黄色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>绿色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>紫色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>粉色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>青色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>蓝色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>白色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>黑色</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>733</x>
+      <y>17</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>更新间隔：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_4">
+    <property name="geometry">
+     <rect>
+      <x>818</x>
+      <y>14</y>
+      <width>80</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>0分钟</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>5分钟</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>10分钟</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>20分钟</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>30分钟</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton_1">
+    <property name="geometry">
+     <rect>
+      <x>935</x>
+      <y>13</y>
+      <width>65</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>更换</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>54</y>
+      <width>1150</width>
+      <height>5</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>1079</width>
+      <height>546</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinimumSize</enum>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="spacing">
+      <number>8</number>
+     </property>
+     <item row="1" column="0">
+      <widget class="QWebView" name="webView_01">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QWebView" name="webView_02">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QWebView" name="webView_03">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QWebView" name="webView_04">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QWebView" name="webView_05">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QWebView" name="webView_06">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QWebView" name="webView_07">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QWebView" name="webView_08">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QWebView" name="webView_09">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QWebView" name="webView_10">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QWebView" name="webView_11">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QWebView" name="webView_12">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QWebView" name="webView_13">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QWebView" name="webView_14">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QWebView" name="webView_15">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QWebView" name="webView_16">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QWebView" name="webView_17">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QWebView" name="webView_18">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QWebView" name="webView_19">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="QWebView" name="webView_20">
+       <property name="minimumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>208</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="url">
+        <url>
+         <string>g:\1.jpg</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>1036</x>
+      <y>13</y>
+      <width>65</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>随机</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKit/QWebView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
