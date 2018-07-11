@@ -11,7 +11,7 @@ function initMusic() {
     {'name':'最近 - 沙尘', 'img': 'http://oeff2vktt.bkt.clouddn.com/image/65.jpg', 'mp3': 'http://www.ytmp3.cn/?down/48743.mp3'},
     {'name':'雨姬桩 - 洛天依', 'img': 'http://img4.kuwo.cn/star/starheads/240/68/28/1484671759.jpg', 'mp3': 'http://www.ytmp3.cn/?down/48731.mp3'},
     {'name':'佛系少女 - 冯提莫', 'img': 'https://y.gtimg.cn/music/photo_new/T002R300x300M000001CrpRT25yAN5.jpg?max_age=2592000', 'mp3': 'http://www.ytmp3.cn/?down/46741.mp3'}]
-    var index = navigator.onLine ? index = Math.floor(Math.random() * music.length) : 0
+    var index = navigator.onLine ? index = Math.floor(Math.random() * (music.length - 1) + 1) : 0
     document.getElementById('audio_name').innerText = music[index]['name']
     document.getElementById('audio_small_img').src = document.getElementById('audio_small_img2').src = music[index]['img']
     document.getElementById('my_audio').src = music[index]['mp3']
